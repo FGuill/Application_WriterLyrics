@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_slide">
+
+    <LinearLayout
+    android:id="@+id/frame_expand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:weightSum="3"
+    android:orientation="vertical"
+        android:background="#FFF2F2F2"
+   >
+
+        <EditText
+            android:id="@+id/search_ET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:hint="@string/searchhashtag"
+            android:allowUndo="true" />
+
+
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/recyclerview">
+
+                </ListView>
+
+
+
+
+
+</LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_nonetwork"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_nonetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_nonetwork"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reconnect"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:text="@string/enablenetwork"
+                    android:id="@+id/te"
+                    android:visibility="visible"
+                    android:textColor="#313131"
+                    android:background="#00000000"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

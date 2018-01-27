@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "346564130321",
+    "firebase_url": "https://lyricswriter-893d4.firebaseio.com",
+    "project_id": "lyricswriter-893d4",
+    "storage_bucket": "lyricswriter-893d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346564130321:android:205e3f38655747df",
+        "android_client_info": {
+          "package_name": "com.guilla.lyricswriter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346564130321-l8l7s5h2np1niqkf6f80jhqr9r3jl20s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABtxqeMZki26_DUsy2RqDOkBLSZ2Tj9QA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

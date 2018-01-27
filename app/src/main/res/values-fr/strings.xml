@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">CollabNote</string>
+    <string name="facebook_id">674293942777647</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string name="hint">Editor #%d</string>
+
+    <string-array name="items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+
+    <!-- Boite Confirmation -->
+    <string name="dialog_OK">OK</string>
+    <string name="dialog_BtnCancel">ANNULER</string>
+    <string name="dialog_network">Aucune connéxion réseau.\n Connectez-vous à un réseau et réessayer.</string>
+    <string name="network">Connectivité</string>
+
+    <string name="skip">SKIP</string>
+    <string name="next">SUIVANT</string>
+    <string name="done">DONE</string>
+
+    <string name="facebook_app_id">1358632877560226</string>
+    <string name="TwitterconsumerKey">vr3RhPuuuYc2O9ICHJHypHNuJ</string>
+    <string name="TwitterconsumerSecret">vZpwlX3ny3bwkQmDfe8T1milnAmNVUINCYQuUEU52QsnBKy7WG</string>
+    <string name="ParseAppId">98b6cd47f94a3dea8d6785b1b3ab821b638eab30</string>
+    <string name="gcm_sender_id">569826207341</string>
+    <string name="parse_sender_id">id:569826207341</string>
+    <string name="gcmserver">AAAAOKfHz_g:APA91bGa-DONnzpSp3S60aV-EtWGTtCrYgm165l0ni_VdnTgadnODYvjKAd4fE0LEX6Fb0m_NRnkhBt1oV3h7NrwnkQeiKT7xtPDftHQU5GHIVlSkcOcoM4qFBDtMc2fvS7Ulh4w4XoS</string>
+
+    <string name="gcm_apiKey">AIzaSyDQn1Kz5Kx_XiQZjtNh0sfz9J0Z8FyUlQU</string>
+
+
+    <string name="twitter_callback">x-oauthflow-twitter://callback</string>
+
+    <string name="contactchooser">Choose a contact</string>
+
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_consumer_key">vr3RhPuuuYc2O9ICHJHypHNuJ</string>
+    <string name="twitter_consumer_secret">vZpwlX3ny3bwkQmDfe8T1milnAmNVUINCYQuUEU52QsnBKy7WG</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+
+
+    <string name="Animals">Animals &amp; Pets</string>
+    <string name="HomeGarden">Home &amp; Garden</string>
+    <string name="Arts">Arts &amp; Culture</string>
+    <string name="Miscellaneous">Miscellaneous</string>
+    <string name="Careers">Careers &amp; Work</string>
+    <string name="Money">Money &amp; Finance</string>
+    <string name="Clothing">Clothing</string>
+    <string name="Productivity">Productivity</string>
+    <string name="Computers">Computers</string>
+    <string name="Requests">Requests</string>
+    <string name="Electronics">Electronics</string>
+    <string name="School">School &amp; College</string>
+    <string name="Food">Food &amp; Drink</string>
+    <string name="Social">Social</string>
+    <string name="Health">Health &amp; Fitness</string>
+    <string name="Travelling">Travelling</string>
+
+    <string name="likesolution">like your tips</string>
+    <string name="ilikesolution">like the tips</string>
+    <string name="answered">has comment :</string>
+
+    <string name="notification_answeredtomessage">vous invite à collaborer sur le projet.</string>
+    <string name="notification_inivitationaccepted">a accepté votre invitation à collaborer sur.</string>
+
+    <string name="commentaires"> commentaires</string>
+    <string name="notification_follower">à commencé à vous suivre.</string>
+    <string name="enablenetwork">Veuillez activer votre connexion internet</string>
+    <string name="you">INVITATION</string>
+
+    <string name="unfollow">ne plus suivre</string>
+    <string name="follow">invite</string>
+    <string name="followback">suivre en retour</string>
+    <string name="disconnect">Déconnexion</string>
+    <string name="answer">Répondre</string>
+    <string name="by">par</string>
+    <string name="see">Voir</string>
+    <string name="startfollow">vous invite à collaborer sur le groupe</string>
+
+    <string name="follower">Abonnés</string>
+    <string name="following">Abonnement</string>
+    <string name="comments">Commentaire</string>
+
+    <string name="followerprofil">abonnés</string>
+    <string name="followingprofil">abos.</string>
+
+    <string name="profil">PROFIL</string>
+    <string name="search">RECHERCHE</string>
+    <string name="likes">AIME</string>
+    <string name="tips">COLLABNOTE</string>
+    <!-- End Configurations -->
+    <string name="publish">PUBLIER</string>
+    <string name="addTips">Ecrivez et publiez votre astuce</string>
+    <string name="posted">Publier avec succès</string>
+    <string name="select">Veuillez séléctionner une catégorie</string>
+    <string name="writetips">Vous oubliez d\'écrire votre astuce!</string>
+    <string name="searchhashtag">Rechercher un hashtag</string>
+    <string name="creator">créateur:</string>
+    <string name="begincollab">Commencer à collaborer</string>
+    <string name="Appuyersur">Appuyer sur</string>
+    <string name="groupe">pour créer un groupe.</string>
+    <string name="mylyrics">Mes Notes</string>
+    <string name="invitefriends">Inviter des amis</string>
+    <string name="join">Rejoindre</string>
+    <string name="quit">Quitter</string>
+    <string name="writetext">Ecrivez votre texte</string>
+
+    <string name="invite">invite</string>
+    <string name="inviteaccepted">accepté</string>
+    <string name="invitesent">envoyé</string>
+    <string name="iscreator">créateur</string>
+
+    <string name="createnote">Créer une note</string>
+    <string name="notename">nom de note</string>
+    <string name="create">CREER</string>
+    <string name="save">Enregistrer</string>
+    <string name="invitefriendcollab">invité amis</string>
+    <string name="newgroup"> Nouveau Groupe</string>
+    <string name="namegroup"> Nom de group</string>
+    <string name="entergroup">Veuillez entrer un nom de groupe</string>
+    <string name="savenote">Note sauvegardé et rafraichi.</string>
+    <string name="refreshnote">Vous n\'avez écrit aucun texte, souhaitez-vous sauvegarder quand même?</string>
+    <string name="refreshnotetitle">Sauvegarde</string>
+    <string name="ouvrir">OUVRIR</string>
+
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout">
+
+
+
+    <LinearLayout
+        android:id="@+id/frame_expand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:background="#FFF2F2F2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/places_ic_search"></ImageView>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/search_ET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:hint="search friends"
+                android:allowUndo="true" />
+
+        </LinearLayout>
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:layout_above="@+id/linear_slide">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="2dp"
+                android:id="@+id/recyclerview">
+
+            </ListView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutinvite"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        android:background="@drawable/border_button"
+        android:layout_alignParentTop="true">
+
+
+
+        <ImageView
+            android:id="@+id/tri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_invite"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tri"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/po"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize15"
+                    android:gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:text="Aucun amis ajouté, inviter vos amis à installer cette application?"
+                    android:id="@+id/pp"
+                    android:visibility="visible"
+                    android:textColor="#313131"
+                    android:background="#00000000"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbt"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/invitefriends"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/white"
+                        android:text="Inviter"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:visibility="visible"
+                android:background="#d2d2d2">
+
+            </View>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_nonetwork"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true">
+
+
+
+        <ProgressBar
+            android:id="@+id/animation_nonetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_nonetwork"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reconnect"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize15"
+                    android:gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:text="@string/enablenetwork"
+                    android:id="@+id/te"
+                    android:visibility="visible"
+                    android:textColor="#313131"
+                    android:background="#00000000"
+                    />
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:visibility="visible"
+                android:background="#d2d2d2">
+
+            </View>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

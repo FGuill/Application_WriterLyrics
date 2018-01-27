@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="false"
+            android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:id="@+id/relativebarre"
+                    android:alpha="0.9"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:weightSum="2"
+                    >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.9"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/icon_logo"
+                            app:civ_border_width="0.8dp"
+                            app:civ_border_color="@color/grey"
+                            android:id="@+id/logo"/>
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:id="@+id/barre"
+                            android:layout_below="@+id/logo"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/tw__blue_default"
+                            >
+
+                        </View>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:id="@+id/relativer"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/relativebarre"
+                    >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/username"
+                            android:text="username"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsize15"
+                            android:layout_marginTop="8dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/verified"
+                            android:visibility="invisible"
+                            android:layout_toRightOf="@+id/username"
+                            android:src="@drawable/tw__app_info_layout_border"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/usermentioned"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:textSize="@dimen/textsize14"
+                            android:layout_below="@+id/username"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/usertext"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
+                            android:text="usertext"
+                            android:textSize="@dimen/fragment_editext"
+                            android:layout_below="@+id/username"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/usermentioned" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/time"
+                            android:layout_marginTop="8dp"
+                            android:textSize="@dimen/textsize10"
+                            tools:text="time"
+                            android:textAllCaps="true"
+                            android:layout_below="@+id/usertext"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/answer"
+                            android:layout_marginTop="8dp"
+                            android:textSize="@dimen/textsize11"
+                            android:text="@string/answer"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/usertext"
+                            android:layout_toRightOf="@+id/time"
+                            android:layout_marginLeft="10dp"
+                            />
+                </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/barreHasAnswer"
+            android:background="@color/white"></View>
+</LinearLayout>
