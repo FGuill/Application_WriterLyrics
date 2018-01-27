@@ -155,7 +155,7 @@
                 android:layout_weight="2.2"
                 android:weightSum="4">
 
-                <com.sharity.sharityUser.fonts.EditTextGeoManis
+                <com.guilla.lyricswriter.fonts.EditTextGeoManis
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:inputType="textPersonName"
@@ -180,7 +180,7 @@
                 android:layout_marginTop="7dp"
                 android:weightSum="4">
 
-                <com.sharity.sharityUser.fonts.EditTextGeoManis
+                <com.guilla.lyricswriter.fonts.EditTextGeoManis
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"

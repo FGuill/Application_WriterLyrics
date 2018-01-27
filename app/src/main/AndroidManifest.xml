@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sharity.sharityUser">
+    package="com.guilla.lyricswriter">
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -21,13 +17,9 @@
     <!--    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>-->
     <!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <permission
-        android:name="com.example.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -50,11 +42,22 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" />
+
         <activity
-            android:name=".activity.TutorialActivity"
+            android:name=".activity.ActivityTutorial.MainTutorialLoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs "com.example.myapp://" -->
+                <data android:scheme="com.guilla.lyricswriter://" />
+
+            </intent-filter>
         </activity>
 
         <activity android:name=".activity.LoginActivity"
@@ -64,55 +67,69 @@
 
         <activity android:name=".activity.ProfilActivity"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            >
         </activity>
-
-        <meta-data
-            android:name="com.onesignal.NotificationOpened.DEFAULT"
-            android:value="DISABLE" />
 
         <activity android:name=".activity.ProfilProActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
-                   android:windowSoftInputMode="adjustPan"
             >
+        </activity>
+
+        <activity android:name=".activity.TipsUserProfilActivity">
         </activity>
 
         <activity android:name=".activity.MapActivity">
         </activity>
 
-
         <activity android:name=".activity.LocationUserActivity">
         </activity>
 
+        <activity android:name=".activity.CommentaryActivity"
+            >
+        </activity>
 
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_id"/>
+        <activity android:name=".activity.TipsActivity"
+            android:windowSoftInputMode="adjustPan"
+            >
+        </activity>
 
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:label="@string/app_name" />
+        <activity android:name=".activity.HashTagActivity"
+            android:windowSoftInputMode="adjustResize"
+            >
+        </activity>
+
+        <activity android:name=".activity.DetailGroupActivity">
+        </activity>
+
+        <activity android:name=".activity.DetailPostActivity">
+        </activity>
+
+
+        <activity android:name=".activity.WriterActivity">
+        </activity>
+
+
+        <activity android:name=".activity.InviteCollabActivity">
+        </activity>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
 
-        <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAcJZH2l4JUjAf8k-X4oO_HaACW6TlRkgM" />
 
-
-
-          <receiver android:name="com.parse.GcmBroadcastReceiver"
-              android:permission="com.google.android.c2dm.permission.SEND">
-              <intent-filter>
-                  <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                  <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-
-                  <category android:name="${packageName}" />
-              </intent-filter>
-          </receiver>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
 
 
         <service
@@ -130,40 +147,12 @@
             </intent-filter>
         </service>
 
-        <service android:name="com.parse.PushService" />
-
-       <!-- <receiver android:name="com.parse.ParsePushBroadcastReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.parse.push.intent.RECEIVE" />
-                <action android:name="com.parse.push.intent.DELETE" />
-                <action android:name="com.parse.push.intent.OPEN" />
-            </intent-filter>
-        </receiver>-->
-
-
-        <receiver
-            android:name=".ParsePushNotification.MyCustomReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.parse.push.intent.RECEIVE" />
-                <action android:name="com.parse.push.intent.DELETE" />
-                <action android:name="com.parse.push.intent.OPEN" />
-            </intent-filter>
-        </receiver>
 
         <meta-data android:name="com.parse.push.gcm_sender_id"
-            android:value="id:569826207341" />
+            android:value="id:24583466934" />
 
 
-        <service
-            android:name=".ParsePushNotification.MyNotificationExtenderService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.onesignal.NotificationExtender" />
-            </intent-filter>
-        </service>
+        <meta-data android:name="io.fabric.ApiKey" android:value="7BYaTXI9e8Newy3xIuICbGY2s"/>
     </application>
 
 </manifest>

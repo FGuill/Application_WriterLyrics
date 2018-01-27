@@ -20,9 +20,12 @@
     <item name="bleutrèsclair" type="color">#996899D3</item>
     <item name="greylight" type="color">#a8a8a8</item>
 
-
+    <item name="greyfonce" type="color">#616161</item>
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#FFFFFF</color>
+    <color name="blancasse">#fcfcfc</color>
+    <color name="greybobo">#f2f2f2</color>
+
     <color name="navigationBarColor">#000000</color>
     <color name="greensafe">#3eaa50</color>
 
@@ -50,4 +53,32 @@
     <color name="fbutton_color_wisteria">#8e44ad</color>
     <color name="fbutton_default_color">#3eadeb</color>
     <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="orange">#ff8b24</color>
+    <color name="orangefonce">#ed7509</color>
+    <color name="beige">#fffef8</color>
+    <color name="greenapp">#2ba365</color>
+    <color name="greenappfloat">#23b752</color>
+
+
+    <!-- Colors category-->
+    <color name="color_animals">#8f4c4c</color>
+    <color name="color_home">#71a949</color>
+    <color name="color_art">#479cfc</color>
+    <color name="color_miscellaneous">#a2a2a2</color>
+    <color name="color_careers">#9935ab</color>
+    <color name="color_money">#35ae54</color>
+    <color name="color_clothing">#9867f1</color>
+    <color name="color_productivity">#f64a56</color>
+    <color name="color_computers">#4a6cff</color>
+    <color name="color_requests">#516266</color>
+    <color name="color_electronics">#3286ef</color>
+    <color name="color_school">#f6602b</color>
+    <color name="color_food">#f6902b</color>
+    <color name="color_social">#2b8bf6</color>
+    <color name="color_health">#f62b60</color>
+    <color name="color_travelling">#2e965c</color>
+    <item name="grisbleu" type="color">#cfdeef</item>
+    <item name="grisbleus" type="color">#e7eef4</item>
+
+
 </resources>

@@ -47,7 +47,7 @@
         android:layout_weight="0.3"
         android:orientation="horizontal">
 
-        <com.sharity.sharityUser.fonts.TextViewNotoSansRegular
+        <com.guilla.lyricswriter.fonts.TextViewNotoSansRegular
             android:text="BIENVENUE SUR SHARITY"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -162,7 +162,7 @@
                 android:weightSum="4">
 
 
-                <com.sharity.sharityUser.fonts.TextViewNotoSansRegular
+                <com.guilla.lyricswriter.fonts.TextViewNotoSansRegular
                     android:text="mot de passe oublié / changer de mot de passe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                 android:weightSum="2"
                 >
 
-                <com.sharity.sharityUser.fonts.TextViewNotoSansRegular
+                <com.guilla.lyricswriter.fonts.TextViewNotoSansRegular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
@@ -219,7 +219,7 @@
       >
 
 
-        <com.sharity.sharityUser.fonts.TextViewNotoSansRegular
+        <com.guilla.lyricswriter.fonts.TextViewNotoSansRegular
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="INSCRIPTION"

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/background"
+
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backgroundRelative"
+                    android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:id="@+id/text"
+                                    android:layout_marginLeft="10dp"
+                                    >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/imageView"
+                                            android:id="@+id/name_writer"
+                                            android:textStyle="bold"
+                                            android:text="writer"/>
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignBaseline="@+id/text"
+                                    android:visibility="invisible"
+                                    android:clickable="false"
+                                    android:id="@+id/email"
+                                    android:layout_marginRight="30dp"
+                                    android:src="@drawable/ic_email"/>
+
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grisbleus"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/lineareditor"
+                            >
+
+                                <com.guilla.lyricswriter.Utils.LinedEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/editor"
+                                    android:textColor="@color/black"
+                                    android:inputType="textMultiLine"
+                                    android:minLines="6"
+                                    android:maxLines="1000"
+                                    android:singleLine="false"
+                                    android:gravity="top|left"
+                                    android:padding="5dip"
+                                    android:scrollbars="vertical"
+                                    android:fadingEdge="vertical"
+                                    android:lines="7"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+
+                </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>

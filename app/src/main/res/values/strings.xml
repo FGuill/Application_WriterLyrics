@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sharity</string>
+    <string name="app_name">CollabNote</string>
     <string name="facebook_id">674293942777647</string>
     <string name="close">close</string>
     <string name="open">open</string>
@@ -36,8 +36,9 @@
     <string name="next">NEXT</string>
     <string name="done">DONE</string>
 
-    <string name="TwitterconsumerKey">qwEsZSc4qUHiDfQ7tKZn6T99a</string>
-    <string name="TwitterconsumerSecret">34Tgd35VwC0feJFOTYk88GCnZx1f9twmeBbc3nrQgBX67l9Uz6</string>
+    <string name="facebook_app_id">1358632877560226</string>
+    <string name="TwitterconsumerKey">vr3RhPuuuYc2O9ICHJHypHNuJ</string>
+    <string name="TwitterconsumerSecret">vZpwlX3ny3bwkQmDfe8T1milnAmNVUINCYQuUEU52QsnBKy7WG</string>
     <string name="ParseAppId">98b6cd47f94a3dea8d6785b1b3ab821b638eab30</string>
     <string name="gcm_sender_id">569826207341</string>
     <string name="parse_sender_id">id:569826207341</string>
@@ -45,6 +46,100 @@
 
     <string name="gcm_apiKey">AIzaSyDQn1Kz5Kx_XiQZjtNh0sfz9J0Z8FyUlQU</string>
 
+
+    <string name="twitter_callback">x-oauthflow-twitter://callback</string>
+
+    <string name="contactchooser">Choose a contact</string>
+
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_consumer_key">vr3RhPuuuYc2O9ICHJHypHNuJ</string>
+    <string name="twitter_consumer_secret">vZpwlX3ny3bwkQmDfe8T1milnAmNVUINCYQuUEU52QsnBKy7WG</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+
+
+    <string name="Animals">Animals &amp; Pets</string>
+    <string name="HomeGarden">Home &amp; Garden</string>
+    <string name="Arts">Arts &amp; Culture</string>
+    <string name="Miscellaneous">Miscellaneous</string>
+    <string name="Careers">Careers &amp; Work</string>
+    <string name="Money">Money &amp; Finance</string>
+    <string name="Clothing">Clothing</string>
+    <string name="Productivity">Productivity</string>
+    <string name="Computers">Computers</string>
+    <string name="Requests">Requests</string>
+    <string name="Electronics">Electronics</string>
+    <string name="School">School &amp; College</string>
+    <string name="Food">Food &amp; Drink</string>
+    <string name="Social">Social</string>
+    <string name="Health">Health &amp; Fitness</string>
+    <string name="Travelling">Travelling</string>
+
+    <string name="likesolution">like your tips</string>
+    <string name="ilikesolution">like the tips</string>
+    <string name="answered">has comment :</string>
+
+    <string name="notification_answeredtomessage">has answer to your comment.</string>
+    <string name="notification_inivitationaccepted">has accepted your invitation to collab on.</string>
+
+    <string name="commentaires"> comments</string>
+    <string name="notification_follower">is now following you.</string>
+    <string name="disconnect">Déconnexion</string>
+
+    <string name="unfollow">unfollow</string>
+    <string name="follow">invite</string>
+    <string name="invite">invite</string>
+
+    <string name="followback">follow back</string>
+    <string name="startfollow">invite you to collaborate on the group</string>
+    <string name="enablenetwork">Please enable your network conectivity</string>
+    <string name="you">YOU</string>
+    <string name="answer">Answer</string>
+
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
+
+    <string name="comments">Comments</string>
+
+    <!-- Profoil-->
+    <string name="followerprofil">follower</string>
+    <string name="followingprofil">following</string>
+    <string name="searchhashtag">Search a hashtag</string>
+
+    <string name="profil">PROFIL</string>
+    <string name="search">SEARCH</string>
+    <string name="likes">LIKES</string>
+    <string name="tips">COLLABNOTE</string>
+    <!-- End Configurations -->
+    <string name="publish">PUBLISH</string>
+    <string name="addTips">Write and publish your tips</string>
+    <string name="posted">Posted with success</string>
+    <string name="select">Please select a category</string>
+    <string name="writetips">VYou forgot to write your tips!</string>
+    <string name="creator">creator:</string>
+    <string name="begincollab">Begin a collaboration</string>
+    <string name="Appuyersur">Push on</string>
+    <string name="groupe">to create a group.</string>
+    <string name="invitefriends">Invite friends</string>
+    <string name="join">Join</string>
+    <string name="quit">Quit</string>
+    <string name="writetext">Write your text</string>
+    <string name="inviteaccepted">accepted</string>
+    <string name="invitesent">sent</string>
+    <string name="iscreator">creator</string>
+    <string name="createnote">Create a note</string>
+    <string name="notename">Note name</string>
+    <string name="create">CREATE</string>
+    <string name="save">SAVE</string>
+
+    <string name="invitefriendcollab">Invite friends</string>
+    <string name="newgroup"> New Group</string>
+    <string name="entergroup">Please enter group name</string>
+    <string name="namegroup">Group name</string>
+    <string name="savenote">Note saved and refresh.</string>
+    <string name="refreshnote">Your text note is empty, wish you save the note?</string>
+    <string name="refreshnotetitle">Save</string>
+    <string name="ouvrir">OPEN</string>
 
 
 </resources>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SharityApp.iml" filepath="$PROJECT_DIR$/SharityApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Application_WriterLyrics.iml" filepath="$PROJECT_DIR$/Application_WriterLyrics.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkbuilder/linkbuilder.iml" filepath="$PROJECT_DIR$/linkbuilder/linkbuilder.iml" />
     </modules>
   </component>
 </project>

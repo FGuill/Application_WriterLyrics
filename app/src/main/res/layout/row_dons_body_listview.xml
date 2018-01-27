@@ -41,7 +41,7 @@
                 android:layout_alignLeft="@+id/dons"
                 android:layout_alignStart="@+id/dons" />
 
-            <com.sharity.sharityUser.fonts.TextViewGeoManis
+            <com.guilla.lyricswriter.fonts.TextViewGeoManis
                 android:text="price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

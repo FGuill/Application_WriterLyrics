@@ -29,4 +29,35 @@
     <dimen name="profil_fragment_title">17dp</dimen>
     <dimen name="fragment_editext">15dp</dimen>
 
+
+    <dimen name="fragment_categorie">12dp</dimen>
+    <dimen name="fragment_time">9dp</dimen>
+    <dimen name="fragment_category">14dp</dimen>
+
+    <dimen name="textsize6">6dp</dimen>
+    <dimen name="textsize7">7dp</dimen>
+    <dimen name="textsize8">8dp</dimen>
+    <dimen name="textsize9">9dp</dimen>
+    <dimen name="textsize10">10dp</dimen>
+    <dimen name="textsize11">11dp</dimen>
+    <dimen name="textsize12">12dp</dimen>
+    <dimen name="textsize13">13dp</dimen>
+    <dimen name="textsize14">14dp</dimen>
+    <dimen name="textsize15">15dp</dimen>
+    <dimen name="textsize16">16dp</dimen>
+    <dimen name="textsize17">17dp</dimen>
+    <dimen name="textsize18">18dp</dimen>
+    <dimen name="textsize19">19dp</dimen>
+    <dimen name="textsize20">20dp</dimen>
+    <dimen name="textsize21">21dp</dimen>
+    <dimen name="textsize22">22dp</dimen>
+    <dimen name="textsize23">23dp</dimen>
+    <dimen name="textsize24">24dp</dimen>
+    <dimen name="textsize25">25dp</dimen>
+    <dimen name="textsize26">26dp</dimen>
+    <dimen name="textsize27">27dp</dimen>
+    <dimen name="textsize28">28dp</dimen>
+    <dimen name="textsize29">29dp</dimen>
+    <dimen name="textsize30">30dp</dimen>
+
 </resources>

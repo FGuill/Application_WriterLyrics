@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "569826207341",
-    "firebase_url": "https://sharity-159710.firebaseio.com",
-    "project_id": "sharity-159710",
-    "storage_bucket": "sharity-159710.appspot.com"
+    "project_number": "346564130321",
+    "firebase_url": "https://lyricswriter-893d4.firebaseio.com",
+    "project_id": "lyricswriter-893d4",
+    "storage_bucket": "lyricswriter-893d4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:569826207341:android:0ed41bf6d78eb68a",
+        "mobilesdk_app_id": "1:346564130321:android:205e3f38655747df",
         "android_client_info": {
-          "package_name": "com.sharity.sharityUser"
+          "package_name": "com.guilla.lyricswriter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "569826207341-reeupidamuaftrkih4r3ml6mtu4kd853.apps.googleusercontent.com",
+          "client_id": "346564130321-68mhcruj3nreptbb244rj0pe40sp22iv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.guilla.lyricswriter",
+            "certificate_hash": "739c3b1169c1ffe35e45b14d30cf7aa697574ce0"
+          }
+        },
+        {
+          "client_id": "346564130321-l8l7s5h2np1niqkf6f80jhqr9r3jl20s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDQn1Kz5Kx_XiQZjtNh0sfz9J0Z8FyUlQU"
+          "current_key": "AIzaSyABtxqeMZki26_DUsy2RqDOkBLSZ2Tj9QA"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346564130321-l8l7s5h2np1niqkf6f80jhqr9r3jl20s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

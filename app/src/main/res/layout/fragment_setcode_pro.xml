@@ -38,7 +38,7 @@
             android:textSize="22dp" />
 
 
-        <com.sharity.sharityUser.fonts.TextViewGeoManis
+        <com.guilla.lyricswriter.fonts.TextViewGeoManis
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.3"
@@ -60,7 +60,7 @@
         android:weightSum="1">
 
 
-        <com.sharity.sharityUser.fonts.TextViewSegoeUi
+        <com.guilla.lyricswriter.fonts.TextViewSegoeUi
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
@@ -90,7 +90,7 @@
                 android:weightSum="4"
                 android:gravity="center">
 
-                <com.sharity.sharityUser.fonts.EditTextMontserra
+                <com.guilla.lyricswriter.fonts.EditTextMontserra
                     android:id="@+id/saisir_code"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                 android:weightSum="4"
                 android:gravity="center">
 
-                <com.sharity.sharityUser.fonts.EditTextMontserra
+                <com.guilla.lyricswriter.fonts.EditTextMontserra
                     android:id="@+id/confirmer_code"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -140,7 +140,7 @@
 
 
 
-            <com.sharity.sharityUser.fonts.TextViewSegoeUi
+            <com.guilla.lyricswriter.fonts.TextViewSegoeUi
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

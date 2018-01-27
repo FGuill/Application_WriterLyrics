@@ -16,38 +16,49 @@
         android:orientation="vertical"
         android:weightSum="3">
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5"></View>
+            android:layout_weight="0.5"
+            android:gravity="right">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:indeterminate="true"
+                android:layout_margin="8dp"
+                />
+
+        </LinearLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.45"
             android:gravity="center"
-            android:src="@drawable/logo" />
+            android:src="@drawable/iconapp" />
 
-        <com.sharity.sharityUser.fonts.TextViewNotoSansRegular
+        <com.guilla.lyricswriter.fonts.TextViewNotoSansRegular
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.6"
             android:gravity="center_horizontal|center_vertical"
-            android:text="SHARITY"
+            android:text="COLLABNOTE"
             app:NotoRegular="notosansuiregular.ttf"
-            android:textColor="@color/green"
-            android:textSize="@dimen/title_sharity" />
+            android:textColor="@color/greenapp"
+            android:textSize="@dimen/textsize19" />
 
 
-        <com.sharity.sharityUser.fonts.TextViewNotoSansRegular
+        <com.guilla.lyricswriter.fonts.TextViewNotoSansRegular
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.45"
             android:gravity="center_horizontal|center_vertical"
-            android:text="Bienvenue dans l'ère du don gratuit"
+            android:text="collaboration on note"
             app:NotoRegular="notosansuiregular.ttf"
-            android:textColor="@color/green"
-            android:textSize="@dimen/sharity_subtitle"
+            android:textColor="@color/greenapp"
+            android:textSize="@dimen/textsize16"
              />
 
 
@@ -83,7 +94,7 @@
             android:layout_weight="1"
             android:weightSum="4">
 
-            <com.sharity.sharityUser.Utils.GradualGrowingLine
+            <com.guilla.lyricswriter.Utils.GradualGrowingLine
                 android:id="@+id/gradualGrowingLine1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -104,29 +115,59 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <ImageView
+                <FrameLayout
+                    android:id="@+id/FrameLayout1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:id="@+id/facebook_login"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/facebook_unclick"
-                    />
+                    android:layout_height="wrap_content" >
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/facebook_login"
+                        android:src="@drawable/facebook_unclick"
+                        />
+                </FrameLayout>
+
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 android:gravity="center">
 
-                <ImageView
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/twitter_unclick"
-                    android:id="@+id/twitter_login" />
+                    android:layout_height="wrap_content" >
+
+                    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                        android:id="@+id/fake_twitterbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/twitter_unclick"
+                        android:id="@+id/twitter_login" />
+                        />
+                </FrameLayout>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -139,7 +180,7 @@
             android:layout_weight="1"
             android:weightSum="4">
 
-            <com.sharity.sharityUser.Utils.GradualGrowingLine
+            <com.guilla.lyricswriter.Utils.GradualGrowingLine
                 android:id="@+id/gradualGrowingLine2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -166,8 +207,16 @@
                 android:layout_height="0dp"
                 android:layout_weight="1.2"
                 android:orientation="vertical"
+                android:gravity="center"
                 >
 
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:clickable="false"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -189,6 +238,8 @@
                     android:text="Charité"
                     android:textSize="15dp"
                     android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:clickable="false"
                  android:background="@drawable/border_color_button_pro"
                 android:textColor="@color/red"
                     />
@@ -200,6 +251,8 @@
                     android:layout_height="match_parent"
                     android:id="@+id/pro_login_acces"
                     android:layout_gravity="right"
+                    android:visibility="invisible"
+                    android:clickable="false"
                     android:layout_marginRight="10dp"
                     android:text="PRO"
                     android:background="@drawable/border_color_button_pro"

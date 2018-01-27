@@ -1,138 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="6.8"
-    android:background="@color/white"
-    tools:context="testappparse.guilla.com.testappparse.testappparse.guilla.com.sharity.MainActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="0.8"
-        android:weightSum="2">
+        android:layout_height="match_parent"
+        android:id="@+id/framebackground"
+        >
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/cash_icone"
-                android:layout_gravity="center"
-                android:id="@+id/cash" />
-        </LinearLayout>
+            android:orientation="vertical"
+            tools:context="testappparse.guilla.com.testappparse.testappparse.guilla.com.sharity.MainActivity">
 
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/swipeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_above="@+id/linear_slide">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/cb_icone"
-                android:layout_gravity="center"
-                android:id="@+id/CB" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerview"
+                    android:focusable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                </android.support.v7.widget.RecyclerView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
 
 
         </LinearLayout>
+    </RelativeLayout>
 
-    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_nonetwork"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"></LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="1"
-        android:gravity="center_horizontal">
 
-        <TextView
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_nonetwork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0E"
-            android:id="@+id/amount_paiment"
-            android:gravity="center"/>
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.3">
 
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_nonetwork"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reconnect"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            >
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:layout_gravity="center"
-                android:layout_weight="0.1"
-                android:id="@+id/barre"
-                android:weightSum="4">
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                >
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="2.5"
-                    android:background="@color/red">
-                </View>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:text=" Veuillez activer votre connexion internet"
+                    android:id="@+id/te"
+                    android:visibility="visible"
+                    android:textColor="#313131"
+                    android:background="#00000000"
+                    />
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+
+
+            <View
+                android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:text="montant du paiment"
-                android:id="@+id/paiment_classique"
-                android:layout_marginTop="8dp"
-                android:gravity="center_horizontal"
-                android:layout_below="@+id/barre"
-                android:layout_alignLeft="@+id/barre"
-                android:layout_alignRight="@+id/barre"/>
+                android:layout_margin="4dp"
+                android:visibility="visible"
+                android:background="#d2d2d2">
 
-        </RelativeLayout>
+            </View>
 
 
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="RESSAYER"
+                android:id="@+id/active_network"
+                android:textColor="#608bff"
+                android:visibility="visible"
+                android:background="#00000000"
+                style="?android:attr/borderlessButtonStyle"
 
-    </LinearLayout>
+                />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"></LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="VALIDER"
-            android:id="@+id/valider"
-            android:padding="10dp"
-            android:gravity="center_horizontal"
-            android:textColor="@color/red"
-            />
-    </LinearLayout>
-
-</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

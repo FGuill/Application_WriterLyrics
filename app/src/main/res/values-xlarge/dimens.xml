@@ -26,6 +26,29 @@
     <dimen name="fragment_code_buttondone">28dp</dimen>
 
     <dimen name="profil_fragment_title">23dp</dimen>
-
-
+    <dimen name="textsize6">14dp</dimen>
+    <dimen name="textsize7">15dp</dimen>
+    <dimen name="textsize8">16dp</dimen>
+    <dimen name="textsize9">17dp</dimen>
+    <dimen name="textsize10">18dp</dimen>
+    <dimen name="textsize11">19dp</dimen>
+    <dimen name="textsize12">20dp</dimen>
+    <dimen name="textsize13">21dp</dimen>
+    <dimen name="textsize14">22dp</dimen>
+    <dimen name="textsize15">23dp</dimen>
+    <dimen name="textsize16">24dp</dimen>
+    <dimen name="textsize17">25dp</dimen>
+    <dimen name="textsize18">26dp</dimen>
+    <dimen name="textsize19">27dp</dimen>
+    <dimen name="textsize20">28dp</dimen>
+    <dimen name="textsize21">29dp</dimen>
+    <dimen name="textsize22">30dp</dimen>
+    <dimen name="textsize23">31dp</dimen>
+    <dimen name="textsize24">32dp</dimen>
+    <dimen name="textsize25">33dp</dimen>
+    <dimen name="textsize26">34dp</dimen>
+    <dimen name="textsize27">35dp</dimen>
+    <dimen name="textsize28">36dp</dimen>
+    <dimen name="textsize29">37dp</dimen>
+    <dimen name="textsize30">38dp</dimen>
 </resources>

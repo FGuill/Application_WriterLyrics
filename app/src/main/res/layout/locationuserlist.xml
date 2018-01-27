@@ -15,23 +15,32 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:weightSum="3"
     android:orientation="vertical"
     tools:context="testappparse.guilla.com.testappparse.testappparse.guilla.com.sharity.MainActivity">
 
+        <EditText
+            android:id="@+id/search_ET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:hint="search"
+            android:allowUndo="true" />
 
-    <android.support.v4.widget.SwipeRefreshLayout
+
+        <android.support.v4.widget.SwipeRefreshLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/swipeContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2.7"
         android:layout_above="@+id/linear_slide">
 
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/ListView"
+            android:layout_height="518dp"
+            android:id="@+id/recyclerview"
             android:focusable="true"
             android:layout_marginTop="5dp"
             android:layout_alignParentTop="true"

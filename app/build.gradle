@@ -1,6 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    lintOptions{
+        checkReleaseBuilds false
+    }
+
     signingConfigs {
         config {
             keyAlias 'Franck'
@@ -20,10 +25,10 @@ android {
     compileSdkVersion 25
     buildToolsVersion "24.0.3"
     defaultConfig {
-        applicationId "com.sharity.sharityUser"
+        applicationId "com.guilla.lyricswriter"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1
+        versionCode 11
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.config
@@ -54,49 +59,67 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            debuggable true
+            debuggable false
         }
     }
     productFlavors {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     provided files('libs/httpclient-4.0.3.jar')
+    compile(name: 'kinvey-android-2.10.12', ext: 'aar')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     // Required for OneSignal, even if you have added FCM.
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.parse:parse-android:1.14.1'
-    compile 'com.parse:parseinterceptors:0.0.2'
     // for logging API calls to LogCat
     compile 'com.parse.bolts:bolts-android:1.+'
     compile 'com.google.code.gson:gson:2.7'
-    compile 'com.parse:parsefacebookutils-v4-android:1.10.4@aar'
-    compile 'com.google.android.gms:play-services-maps:10.0.1'
-    compile 'com.google.android.gms:play-services:10.0.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.android.gms:play-services:11.0.4'
     compile 'com.android.support:multidex:1.0.0'
-    compile 'com.google.firebase:firebase-core:10.0.1'
-    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.google.firebase:firebase-ads:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
     compile 'com.android.support:support-v4:25.1.0'
     compile 'com.android.support:design:25.1.0'
+    compile 'com.google.firebase:firebase-database:11.0.4'
     compile 'com.airbnb.android:lottie:1.5.3'
-    compile 'com.airbnb.android:airmapview:1.4.0'
+    compile 'com.android.support:cardview-v7:25.1.0'
     compile 'com.matthew-tamlin:sliding-intro-screen:3.2.0'
-    compile 'com.google.android.gms:play-services-location:10.0.1'
-    compile 'com.google.android.gms:play-services-places:10.0.1'
+    compile 'com.airbnb.android:airmapview:1.4.0'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.android.gms:play-services-places:11.0.4'
     compile 'com.mikhaellopez:circularprogressbar:1.1.1'
-    compile 'com.parse:parse-livequery-android:1.0.2' // for Parse Live Queries
+    compile 'com.linkedin.android.spyglass:spyglass:1.4.0'
+    compile 'oauth.signpost:signpost-core:1.2.1.2'
+    compile 'oauth.signpost:signpost-commonshttp4:1.2.1.2'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile('com.facebook.android:facebook-android-sdk:4.8.2') {
         exclude module: 'bolts-android'
     }
+    compile('com.twitter.sdk.android:twitter:2.3.2@aar') {
+        transitive = true
+    }
     compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.parse:parsetwitterutils-android:1.10.+'
     compile 'com.roughike:bottom-bar:2.3.1'
+    compile project(path: ':library')
 }
 
 apply plugin: 'com.google.gms.google-services'

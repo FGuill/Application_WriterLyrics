@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:facebook="http://schemas.android.com/apk/res-auto"
-    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/beige"
+    android:layout_height="match_parent">
+
+<android.support.v4.widget.SwipeRefreshLayout
     android:id="@+id/swipeContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -14,266 +17,281 @@
         android:id="@+id/frame_expand"
         >
 
-<LinearLayout
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="2"
-    tools:context="testappparse.guilla.com.testappparse.testappparse.guilla.com.sharity.MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.2"
-        android:orientation="vertical"
-        android:weightSum="5">
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.6"></View>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
 
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1.9"
-                android:layout_gravity="center_horizontal"
-                >
-                <com.mikhaellopez.circularprogressbar.CircularProgressBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/circularprogress"
-                    app:cpb_background_progressbar_color="#FFCDD2"
-                    app:cpb_background_progressbar_width="5dp"
-                    app:cpb_progressbar_color="#F44336"
-                    app:cpb_progressbar_width="9dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/username_login"
-                    tools:text="nom"
-                    android:textColor="@color/blue"
-                    android:textSize="20dp"
-                    android:gravity="center_vertical|center_horizontal" />
-            </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerview">
 
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
 
-
-            >
-    </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:layout_marginTop="7dp"
-            android:weightSum="4">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="2.5"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="4dp"
-                android:background="@color/green"
-                >
-            </View>
         </LinearLayout>
 
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/illustrator_collaboration"
+        android:visibility="invisible"
+        android:background="@color/greybobo"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/greybobo"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:layout_marginTop="13dp"
+            android:id="@+id/pi"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:background="@color/white"
             android:orientation="vertical"
-            android:weightSum="3">
+            >
 
-
-            <com.sharity.sharityUser.fonts.TextViewSegoeUi
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                app:Segoeui="segoeui.ttf"
-                android:textAllCaps="true"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="SharePoints"
-                android:textColor="@color/green"
-                android:textSize="22dp" />
+                android:layout_weight="0.6"
+                android:background="#dffaff"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/teamwork"/>
+
+
+            </LinearLayout>
+
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_horizontal|center_vertical"
-                android:weightSum="4"
-                android:orientation="horizontal">
+                android:layout_weight="0.4"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:textSize="24dp"
-                    android:id="@+id/sharepoints_moins"
-                    android:visibility="invisible"
-                    android:text="-"/>
+                    android:textSize="@dimen/textsize15"
+                    android:gravity="left"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/begincollab"
+                    android:id="@+id/bo"
+                    android:visibility="visible"
+                    android:textColor="#313131"
+                    android:background="#00000000"
+                    />
 
-                <com.sharity.sharityUser.fonts.TextViewGeoManis
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal|center_vertical"
-                    tools:text="Points"
-                    app:GeomanisRegular="geomanistregular.ttf"
-                    android:layout_weight="2"
-                    android:id="@+id/points"
-                    android:textStyle="bold"
-                    android:textSize="25dp" />
+                    android:orientation="horizontal"
+                    >
 
-                <com.sharity.sharityUser.fonts.TextViewMontSerra
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="24dp"
-                    app:Montserra="montserra.ttf"
-                    android:visibility="invisible"
-                    android:id="@+id/sharepoints_plus"
-                    android:text="+"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize13"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="7dp"
+                        android:text="@string/Appuyersur"
+                        android:id="@+id/ss"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible"
+                        android:textColor="#313131"
+                        android:background="#00000000"
+                        />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/myFAB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:src="@drawable/edit"
+                        app:backgroundTint="@color/greenapp"
+                        app:elevation="4dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textsize13"
+                        android:gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="7dp"
+                        android:text="@string/groupe"
+                        android:id="@+id/pp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible"
+                        android:textColor="#313131"
+                        android:background="#00000000"
+                        />
+
+                </LinearLayout>
 
             </LinearLayout>
 
-            <RelativeLayout
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_item"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.7"
+                    android:src="@drawable/icon_logo"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textSize="@dimen/textsize16"
+                android:textColor="@color/blue"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="no data"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_nonetwork"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_nonetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_nonetwork"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/reconnect"
+            android:weightSum="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="center"
                 >
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/dummyanchor"
-                    android:layout_toLeftOf="@+id/do_donationTV"
-                    android:layout_marginLeft="20dp"
-                    android:layout_alignParentLeft="true"
-                    tools:text="fff"
-                    android:visibility="invisible">
-                </TextView>
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:text="@string/enablenetwork"
+                    android:id="@+id/te"
+                    android:visibility="visible"
+                    android:textColor="#313131"
+                    android:background="#00000000"
+                    />
+            </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_centerInParent="true"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:text="faire un don"
-                    android:textColor="@color/green"
-                    android:id="@+id/do_donationTV"
-                    android:textSize="17dp" />
 
-            </RelativeLayout>
+
+
+
         </LinearLayout>
 
-        > </LinearLayout>
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="0.8"
-    >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/dons_view"
-        android:visibility="visible"
-        android:clickable="true"
-        android:weightSum="2">
-
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.6"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:id="@+id/recycler_charity"></android.support.v7.widget.RecyclerView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:gravity="center_vertical|center_horizontal|top"
-            android:layout_weight="1.4"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/charity_description"
-            android:text=""/>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/success_donate_view"
-        android:visibility="invisible"
-        android:clickable="true"
-        android:layout_marginTop="20dp"
-        android:weightSum="4"
-        >
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="0dp"
-            android:textColor="#000000"
-           android:layout_weight="0.7"
-           android:textSize="17sp"
-           android:gravity="center_horizontal|center_vertical"
-           android:text="Tu viens de donner"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.7"
-            android:textColor="@color/green"
-            android:textSize="18sp"
-            android:id="@+id/success_donate_sharepoint"
-            android:gravity="center_horizontal|center_vertical"
-            tools:text=" De SharePoint "/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.7"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            android:id="@+id/success_donate_tobusiness"
-            android:gravity="center_horizontal|center_vertical"
-            tools:text="à la ligue contre le cancer"/>
-
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
-
-</LinearLayout>
-    </RelativeLayout>
-</android.support.v4.widget.SwipeRefreshLayout>

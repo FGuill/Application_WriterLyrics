@@ -22,11 +22,42 @@
     <!--fragment_code_pro-->
     <dimen name="fragment_code_pro_title">17dp</dimen>
     <dimen name="fragment_code_editext">11dp</dimen>
-    <dimen name="fragment_code_buttondone">17dp</dimen>
+    <dimen name="fragment_code_buttondone">15dp</dimen>
 
 
     <!--Profil Fragment Title -->
     <dimen name="profil_fragment_title">17dp</dimen>
     <dimen name="fragment_editext">11dp</dimen>
+
+    <dimen name="fragment_categorie">8dp</dimen>
+    <dimen name="fragment_time">5dp</dimen>
+    <dimen name="fragment_category">10dp</dimen>
+
+
+    <dimen name="textsize6">2dp</dimen>
+    <dimen name="textsize7">3dp</dimen>
+    <dimen name="textsize8">4dp</dimen>
+    <dimen name="textsize9">5dp</dimen>
+    <dimen name="textsize10">6dp</dimen>
+    <dimen name="textsize11">7dp</dimen>
+    <dimen name="textsize12">8dp</dimen>
+    <dimen name="textsize13">8dp</dimen>
+    <dimen name="textsize14">10dp</dimen>
+    <dimen name="textsize15">11dp</dimen>
+    <dimen name="textsize16">12dp</dimen>
+    <dimen name="textsize17">13dp</dimen>
+    <dimen name="textsize18">14dp</dimen>
+    <dimen name="textsize19">15dp</dimen>
+    <dimen name="textsize20">16dp</dimen>
+    <dimen name="textsize21">17dp</dimen>
+    <dimen name="textsize22">18dp</dimen>
+    <dimen name="textsize23">19dp</dimen>
+    <dimen name="textsize24">20dp</dimen>
+    <dimen name="textsize25">21dp</dimen>
+    <dimen name="textsize26">22dp</dimen>
+    <dimen name="textsize27">23dp</dimen>
+    <dimen name="textsize28">24dp</dimen>
+    <dimen name="textsize29">25dp</dimen>
+    <dimen name="textsize30">26dp</dimen>
 
 </resources>
