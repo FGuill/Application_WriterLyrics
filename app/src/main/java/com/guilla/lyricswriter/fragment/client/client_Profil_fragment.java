@@ -352,7 +352,7 @@ public class client_Profil_fragment extends Fragment implements SwipeRefreshLayo
             Intent intent=new Intent(getActivity(), WriterActivity.class);
             Bundle bundle=new Bundle();
             Log.d("keiyid",bo.getIdkey());
-            bundle.putString("keyid",bo.getIdkey());
+            bundle.putString("keyiid",bo.getIdkey());
             bundle.putSerializable("group",bo);
             bundle.putSerializable("fragment","collaboration");
             intent.putExtras(bundle);
