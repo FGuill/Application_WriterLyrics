@@ -18,10 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -29,58 +27,29 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 import com.guilla.lyricswriter.Application;
-import com.guilla.lyricswriter.BO.CreateGroupBO;
-import com.guilla.lyricswriter.BO.CreeateGroupBo;
-import com.guilla.lyricswriter.BO.EditorWriter;
 import com.guilla.lyricswriter.BO.Group;
-import com.guilla.lyricswriter.BO.Like;
-import com.guilla.lyricswriter.BO.Repost;
 import com.guilla.lyricswriter.BO.User;
-import com.guilla.lyricswriter.BO.UserJoined;
 import com.guilla.lyricswriter.LocalDatabase.DatabaseHandler;
 import com.guilla.lyricswriter.R;
 import com.guilla.lyricswriter.Utils.AdapterMultipleRow;
-import com.guilla.lyricswriter.Utils.AdapterTipsMultipleRow;
 import com.guilla.lyricswriter.Utils.GroupAdapter;
 import com.guilla.lyricswriter.Utils.Utils;
-import com.guilla.lyricswriter.activity.CommentaryActivity;
-import com.guilla.lyricswriter.activity.DetailGroupActivity;
-import com.guilla.lyricswriter.activity.HashTagActivity;
 import com.guilla.lyricswriter.activity.InviteCollabActivity;
 import com.guilla.lyricswriter.activity.LoginActivity;
-import com.guilla.lyricswriter.activity.ProfilActivity;
-import com.guilla.lyricswriter.activity.TipsActivity;
-import com.guilla.lyricswriter.activity.TipsUserProfilActivity;
 import com.guilla.lyricswriter.activity.WriterActivity;
-import com.guilla.lyricswriter.fragment.Updateable;
-
-
-import org.reactivestreams.Subscriber;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
-import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.observers.DisposableObserver;
-import io.reactivex.observers.DisposableSingleObserver;
 
-import static com.guilla.lyricswriter.R.id.animation_nonetwork;
-import static com.guilla.lyricswriter.R.id.frame_expand;
-import static com.guilla.lyricswriter.R.id.frame_nonetwork;
-import static com.guilla.lyricswriter.R.id.group;
-import static com.guilla.lyricswriter.R.id.reconnect;
 import static com.guilla.lyricswriter.fragment.client.client_Container_Partenaire_fragment.vinflater;
 import static com.guilla.lyricswriter.fragment.pagerTips.PagerFragment.PagerOneSet;
 
@@ -382,7 +351,7 @@ public class client_Profil_fragment extends Fragment implements SwipeRefreshLayo
         if (bo.getIdkey()!=null){
             Intent intent=new Intent(getActivity(), WriterActivity.class);
             Bundle bundle=new Bundle();
-            Log.d("keiyd",bo.getIdkey());
+            Log.d("keiyid",bo.getIdkey());
             bundle.putString("keyid",bo.getIdkey());
             bundle.putSerializable("group",bo);
             bundle.putSerializable("fragment","collaboration");
